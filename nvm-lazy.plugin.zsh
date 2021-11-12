@@ -16,5 +16,5 @@ _zsh_lazy_nvm_replace_binaries_and_call() {
 
 for NODE_BINARY in $ZSH_LAZY_NVM_BINARIES
 do
-    eval "$NODE_BINARY() _zsh_lazy_nvm_replace_binaries_and_call '$NODE_BINARY'"
+    eval "$NODE_BINARY() _zsh_lazy_nvm_replace_binaries_and_call '$NODE_BINARY' \$@"
 done
