@@ -11,6 +11,7 @@ _zsh_lazy_nvm_replace_binaries_and_call() {
         unset -f $FUNCTION
     done
     zgen oh-my-zsh plugins/nvm
+    ! [[ "$@" =~ "^nvm use" ]] && [ -f .nvmrc ] && nvm use
     $@
 }
 
