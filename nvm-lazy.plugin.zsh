@@ -1,7 +1,7 @@
 # Lazy load nvm, with multiple entrypoints
 # Add more entrypoints by defining the ZSH_LAZY_NVM_BINARIES array
 if [ -z "$ZSH_LAZY_NVM_BINARIES" ]; then
-    ZSH_LAZY_NVM_BINARIES=('nvm' 'npm' 'node')
+    ZSH_LAZY_NVM_BINARIES=('nvm' 'npm' 'node' 'npx')
 fi
 
 _zsh_lazy_nvm_replace_binaries_and_call() {
